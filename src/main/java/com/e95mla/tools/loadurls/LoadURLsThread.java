@@ -22,6 +22,7 @@ public class LoadURLsThread extends Thread {
 	private boolean writeResultToFile;
 	
 	private static final Logger logger = Logger.getLogger(LoadURLsThread.class);
+	private static final Logger tracer = Logger.getLogger("tracer");
 
 	public LoadURLsThread(int threadId, int requestDelay, long totalTime, String envPath, List<String> urls, boolean writeResultToFile) throws MalformedURLException, IOException, InterruptedException {
 		this.threadId = threadId;
@@ -63,7 +64,8 @@ public class LoadURLsThread extends Thread {
 			
 			long t1 = System.currentTimeMillis();
 			
-			logger.debug("THREAD " + threadId + ": time=" + (t1-t0) + " , bytes=" + bytes +" , url=" + url);
+			//tracer.info("time=" + (t1-t0) + " , bytes=" + bytes +" , url=" + url);
+			tracer.info((t1-t0) + "|" + bytes +"|" + url);
 			
 			try {
 				Thread.sleep(requestDelay);

@@ -1,2 +1,2 @@
-search?q=apa&oq=apa&aqs=chrome..69i57j0l5.401j0j8&sourceid=chrome&es_sm=122&ie=UTF-8
-search?q=apa&oq=gorilla&aqs=chrome..69i57j0l5.401j0j8&sourceid=chrome&es_sm=122&ie=UTF-8
+search-api/search?q=apa&oq=apa&aqs=chrome..69i57j0l5.401j0j8&sourceid=chrome&es_sm=122&ie=UTF-8
+search-api/search?q=apa&oq=gorilla&aqs=chrome..69i57j0l5.401j0j8&sourceid=chrome&es_sm=122&ie=UTF-8
